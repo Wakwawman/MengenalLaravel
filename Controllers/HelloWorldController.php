@@ -11,9 +11,9 @@ class HelloWorldController extends Controller
     {
         return "Selamat Belajar Framework Laravel 10";
     }
-    public function ambilfile()
+    
+    public function ambilFile()
     {
         return view('ambilfile');
     }
-
 }

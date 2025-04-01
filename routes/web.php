@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HelloWorldController;
 use App\Http\Controllers\HtmlController;
+use App\Http\Controllers\LatihanController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,5 +21,11 @@ Route::get('/', function () {
 });
 
 Route::get('helloworld', [HelloWorldController::class, 'index']);
+
 Route::get('ambilfile', [HelloWorldController::class, 'ambilFile']);
+
 Route::get('getlorem', [HtmlController::class, 'getLorem']);
+
+Route::get('tabeldatdir', [LatihanController::class, 'getTabel']);
+
+Route::get('formdatdir', [LatihanController::class, 'getForm']);
